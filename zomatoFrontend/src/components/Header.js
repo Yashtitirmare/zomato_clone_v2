@@ -26,7 +26,9 @@ export default function Header() {
   const responseFacebook = (response) => {
     console.log(response);
   };
-
+  const responseGoogle = (response) => {
+    console.log(response);
+  };
   return (
     <div>
       <div className="header">
@@ -65,7 +67,7 @@ export default function Header() {
           </button>
         </div>
         <div className="container">
-          <label for="uname">
+          <label htmlFor="uname">
             <b>Username</b>
           </label>
           <input
@@ -74,7 +76,7 @@ export default function Header() {
             name="uname"
             required
           />
-          <label for="pswd">
+          <label htmlFor="pswd">
             <b>Password</b>
           </label>
           <input
@@ -165,7 +167,7 @@ export default function Header() {
           </button>
         </div>
         <div className="container">
-          <label for="uname">
+          <label htmlFor="uname">
             <b>Email</b>
           </label>
           <input
@@ -174,7 +176,7 @@ export default function Header() {
             name="uname"
             required
           />
-          <label for="uname">
+          <label htmlFor="uname">
             <b>Username</b>
           </label>
           <input
@@ -183,7 +185,7 @@ export default function Header() {
             name="uname"
             required
           />
-          <label for="pswd">
+          <label htmlFor="pswd">
             <b>Password</b>
           </label>
           <input
@@ -192,7 +194,7 @@ export default function Header() {
             name="pswd"
             required
           />
-          <label for="pswd">
+          <label htmlFor="pswd">
             <b>Repeat Password</b>
           </label>
           <input

@@ -26,7 +26,7 @@ mongoose.connect(
 const PORT = process.env.PORT || 3038;
 
 const corsOptions = {
-  origin: CLIENT_URL,
+  origin: process.env.CLIENT_URL,
   credentials: true,
 };
 

@@ -1,4 +1,6 @@
 //importing
+const cors=require('cors');
+require('dotenv').config();
 const express = require ('express');
 const bodyParser = require('body-parser');
 const restaurantRoutes = require('./routes/restaurant');
@@ -7,8 +9,6 @@ const mealtypeRoutes = require('./routes/mealtype');
 const menuRoutes = require('./routes/menu');
 const paymentRoutes=require('./routes/payment');
 const mongoose = require('mongoose');
-const cors=require('cors')
-require('dotenv').config();
 
 const DBCONNECTIONSTRING= process.env.MONGO_URI;
 
@@ -21,6 +21,8 @@ mongoose.connect(
     e => console.log(e)
   );
   
+mongoose.set('strictQuery', true);
+
 
 //start the express server PORT
 const PORT = process.env.PORT || 3038;

@@ -5,8 +5,8 @@ const Transactions=require('../models/transaction')
 const { error } = require('console')
 
 const instance=new Razorpay({
-    key_id:"rzp_test_UmWUiu9OPckl7e",
-    key_secret: "zAv2ya841bKXyCcK1WAOhujH"
+    key_id:process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_KEY_SECRET
 })
 
 
